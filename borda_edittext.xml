@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Login"
+        android:textColor="#0000FF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id ="@+id/Dev_android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desenvolvimento android II"
+        android:textSize="15sp"
+        android:layout_margin="10sp"
+        android:textColor="#80000000"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/Login"
+        app:layout_constraintStart_toStartOf="@id/Login"
+        app:layout_constraintEnd_toEndOf="@id/Login"/>
+    <ImageView
+        android:id="@+id/imgRatito"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintTop_toBottomOf="@id/Dev_android"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/Usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="70sp"
+        app:layout_constraintTop_toBottomOf="@id/imgRatito"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+    <EditText
+        android:id="@+id/InsertUsuario"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Digite Seu Usuario"
+        android:hint="Digita o usuario nego"
+        android:background="@drawable/borda_edittext"
+        android:textColor="#88000000"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_margin="10sp"
+        app:layout_constraintTop_toBottomOf="@id/Usuario"
+        app:layout_constraintStart_toStartOf="@id/Usuario"
+        app:layout_constraintEnd_toEndOf="@id/Usuario"
+
+    <TextView
+        android:id="@+id/Senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="70sp"
+        app:layout_constraintTop_toBottomOf="@id/InsertUsuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+    <EditText
+        android:id="@+id/InsertSenha"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Digite sua Senha"
+        android:hint="Digita a Senha nego"
+        android:background="@drawable/borda_edittext"
+        android:textColor="#88000000"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_margin="10sp"
+        app:layout_constraintTop_toBottomOf="@id/Senha"
+        app:layout_constraintStart_toStartOf="@id/Senha"
+        app:layout_constraintEnd_toEndOf="@id/Senha"/>
+
+    <Button
+        android:id="@+id/Entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:layout_marginTop="35dp"
+        app:layout_constraintTop_toBottomOf="@id/InsertSenha"
+        app:layout_constraintStart_toStartOf="parent"
+/>
+    <Button
+        android:id="@+id/Cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:layout_marginTop="35dp"
+        app:layout_constraintTop_toBottomOf="@id/InsertSenha"
+        app:layout_constraintStart_toEndOf="@id/Entrar"
+        app:layout_constraintEnd_toEndOf="parent"/>
+        
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
